@@ -1,0 +1,1409 @@
+[
+  {
+    "name": "TopskullV5-0",
+    "url": "assets/inmoov-v2/derived/TopskullV5-0.stl",
+    "source": "assets/inmoov-v2/TopskullV5.stl",
+    "min": [
+      -46.8156623840332,
+      57.46384048461914,
+      -7.152557373046875e-07
+    ],
+    "max": [
+      82.49945068359375,
+      112.0818862915039,
+      53.590362548828125
+    ],
+    "size": [
+      129.3151092529297,
+      54.618045806884766,
+      53.590362548828125
+    ],
+    "triangles": 22894
+  },
+  {
+    "name": "TopskullV5-1",
+    "url": "assets/inmoov-v2/derived/TopskullV5-1.stl",
+    "source": "assets/inmoov-v2/TopskullV5.stl",
+    "min": [
+      -37.76016616821289,
+      74.12791442871094,
+      -7.152557373046875e-07
+    ],
+    "max": [
+      95.86857604980469,
+      137.97036743164062,
+      53.566673278808594
+    ],
+    "size": [
+      133.6287384033203,
+      63.84245300292969,
+      53.566673278808594
+    ],
+    "triangles": 22894
+  },
+  {
+    "name": "TopskullV5-2",
+    "url": "assets/inmoov-v2/derived/TopskullV5-2.stl",
+    "source": "assets/inmoov-v2/TopskullV5.stl",
+    "min": [
+      8.012045860290527,
+      79.09818267822266,
+      0.0
+    ],
+    "max": [
+      27.68158721923828,
+      98.346923828125,
+      4.502755641937256
+    ],
+    "size": [
+      19.669540405273438,
+      19.248741149902344,
+      4.502755641937256
+    ],
+    "triangles": 412
+  },
+  {
+    "name": "TopskullFrontV1-0",
+    "url": "assets/inmoov-v2/derived/TopskullFrontV1-0.stl",
+    "source": "assets/inmoov-v2/TopskullFrontV1.stl",
+    "min": [
+      0.0,
+      14.555648803710938,
+      1.9371509552001953e-07
+    ],
+    "max": [
+      38.9730224609375,
+      79.41858673095703,
+      51.06803512573242
+    ],
+    "size": [
+      38.9730224609375,
+      64.8629379272461,
+      51.06803512573242
+    ],
+    "triangles": 10462
+  },
+  {
+    "name": "TopskullFrontV1-1",
+    "url": "assets/inmoov-v2/derived/TopskullFrontV1-1.stl",
+    "source": "assets/inmoov-v2/TopskullFrontV1.stl",
+    "min": [
+      28.08624267578125,
+      3.814697265625e-06,
+      0.027148358523845673
+    ],
+    "max": [
+      66.04742431640625,
+      88.78668975830078,
+      56.95198440551758
+    ],
+    "size": [
+      37.961181640625,
+      88.78668212890625,
+      56.924835205078125
+    ],
+    "triangles": 21500
+  },
+  {
+    "name": "TopskullFrontV1-2",
+    "url": "assets/inmoov-v2/derived/TopskullFrontV1-2.stl",
+    "source": "assets/inmoov-v2/TopskullFrontV1.stl",
+    "min": [
+      67.315673828125,
+      0.0,
+      0.027148157358169556
+    ],
+    "max": [
+      105.27691650390625,
+      88.78668975830078,
+      56.95198440551758
+    ],
+    "size": [
+      37.96124267578125,
+      88.78668975830078,
+      56.924835205078125
+    ],
+    "triangles": 21500
+  },
+  {
+    "name": "TopskullFrontV1-3",
+    "url": "assets/inmoov-v2/derived/TopskullFrontV1-3.stl",
+    "source": "assets/inmoov-v2/TopskullFrontV1.stl",
+    "min": [
+      94.39013671875,
+      14.555644989013672,
+      0.0
+    ],
+    "max": [
+      133.3631591796875,
+      79.41858673095703,
+      51.06804275512695
+    ],
+    "size": [
+      38.9730224609375,
+      64.86294555664062,
+      51.06804275512695
+    ],
+    "triangles": 10462
+  },
+  {
+    "name": "TopBackskullV4-0",
+    "url": "assets/inmoov-v2/derived/TopBackskullV4-0.stl",
+    "source": "assets/inmoov-v2/TopBackskullV4.stl",
+    "min": [
+      0.0,
+      0.0,
+      5.5730342864990234e-06
+    ],
+    "max": [
+      133.58901977539062,
+      52.965301513671875,
+      54.34697723388672
+    ],
+    "size": [
+      133.58901977539062,
+      52.965301513671875,
+      54.34697341918945
+    ],
+    "triangles": 51728
+  },
+  {
+    "name": "TopBackskullV4-1",
+    "url": "assets/inmoov-v2/derived/TopBackskullV4-1.stl",
+    "source": "assets/inmoov-v2/TopBackskullV4.stl",
+    "min": [
+      0.9522781372070312,
+      27.72918701171875,
+      0.0
+    ],
+    "max": [
+      134.9178009033203,
+      81.71823120117188,
+      54.346981048583984
+    ],
+    "size": [
+      133.96551513671875,
+      53.989044189453125,
+      54.346981048583984
+    ],
+    "triangles": 51728
+  },
+  {
+    "name": "LowBackV5-0",
+    "url": "assets/inmoov-v2/derived/LowBackV5-0.stl",
+    "source": "assets/inmoov-v2/LowBackV5.stl",
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max": [
+      136.0792236328125,
+      70.01416015625,
+      65.57733917236328
+    ],
+    "size": [
+      136.0792236328125,
+      70.01416015625,
+      65.57733917236328
+    ],
+    "triangles": 94752
+  },
+  {
+    "name": "i2_FingersX5V2-0",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-0.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      0.0,
+      31.91307830810547,
+      1.1444091796875e-05
+    ],
+    "max": [
+      19.732627868652344,
+      82.05735778808594,
+      20.033348083496094
+    ],
+    "size": [
+      19.732627868652344,
+      50.14427947998047,
+      20.033336639404297
+    ],
+    "triangles": 7726
+  },
+  {
+    "name": "i2_FingersX5V2-1",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-1.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      17.357200622558594,
+      0.49353599548339844,
+      0.0
+    ],
+    "max": [
+      33.369590759277344,
+      39.59307098388672,
+      17.272777557373047
+    ],
+    "size": [
+      16.01239013671875,
+      39.09953308105469,
+      17.272777557373047
+    ],
+    "triangles": 6502
+  },
+  {
+    "name": "i2_FingersX5V2-2",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-2.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      24.428321838378906,
+      37.54186248779297,
+      4.76837158203125e-06
+    ],
+    "max": [
+      43.86853790283203,
+      87.6861572265625,
+      19.868194580078125
+    ],
+    "size": [
+      19.440216064453125,
+      50.14429473876953,
+      19.86819076538086
+    ],
+    "triangles": 7558
+  },
+  {
+    "name": "i2_FingersX5V2-3",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-3.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      35.249000549316406,
+      0.0,
+      4.76837158203125e-06
+    ],
+    "max": [
+      54.68921661376953,
+      50.144287109375,
+      19.868194580078125
+    ],
+    "size": [
+      19.440216064453125,
+      50.144287109375,
+      19.86819076538086
+    ],
+    "triangles": 7558
+  },
+  {
+    "name": "i2_FingersX5V2-4",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-4.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      46.233985900878906,
+      48.11598205566406,
+      0.0
+    ],
+    "max": [
+      62.246376037597656,
+      87.21551513671875,
+      17.272777557373047
+    ],
+    "size": [
+      16.01239013671875,
+      39.09953308105469,
+      17.272777557373047
+    ],
+    "triangles": 6502
+  },
+  {
+    "name": "i2_FingersX5V2-5",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-5.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      57.452720642089844,
+      0.4935340881347656,
+      0.0
+    ],
+    "max": [
+      73.4651107788086,
+      39.59307098388672,
+      17.272777557373047
+    ],
+    "size": [
+      16.01239013671875,
+      39.09953689575195,
+      17.272777557373047
+    ],
+    "triangles": 6502
+  },
+  {
+    "name": "i2_FingersX5V2-6",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-6.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      64.79093933105469,
+      37.54186248779297,
+      4.76837158203125e-06
+    ],
+    "max": [
+      84.23114776611328,
+      87.6861572265625,
+      19.868194580078125
+    ],
+    "size": [
+      19.440208435058594,
+      50.14429473876953,
+      19.86819076538086
+    ],
+    "triangles": 7558
+  },
+  {
+    "name": "i2_FingersX5V2-7",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-7.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      75.65528106689453,
+      0.0,
+      4.76837158203125e-06
+    ],
+    "max": [
+      95.09549713134766,
+      50.144287109375,
+      19.868194580078125
+    ],
+    "size": [
+      19.440216064453125,
+      50.144287109375,
+      19.86819076538086
+    ],
+    "triangles": 7558
+  },
+  {
+    "name": "i2_FingersX5V2-8",
+    "url": "assets/inmoov-v2/derived/i2_FingersX5V2-8.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "min": [
+      86.32950592041016,
+      48.11598205566406,
+      0.0
+    ],
+    "max": [
+      102.3418960571289,
+      87.21551513671875,
+      17.272777557373047
+    ],
+    "size": [
+      16.01239013671875,
+      39.09953308105469,
+      17.272777557373047
+    ],
+    "triangles": 6502
+  },
+  {
+    "name": "i2_FingersTipX5V2-0",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-0.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      0.0,
+      23.983993530273438,
+      9.5367431640625e-06
+    ],
+    "max": [
+      20.041595458984375,
+      46.87950134277344,
+      30.2374267578125
+    ],
+    "size": [
+      20.041595458984375,
+      22.8955078125,
+      30.237417221069336
+    ],
+    "triangles": 5066
+  },
+  {
+    "name": "i2_FingersTipX5V2-1",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-1.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      2.0618743896484375,
+      0.0,
+      9.5367431640625e-07
+    ],
+    "max": [
+      18.328216552734375,
+      14.70294189453125,
+      21.806171417236328
+    ],
+    "size": [
+      16.266342163085938,
+      14.70294189453125,
+      21.806171417236328
+    ],
+    "triangles": 4624
+  },
+  {
+    "name": "i2_FingersTipX5V2-2",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-2.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      21.86773681640625,
+      0.5740966796875,
+      9.5367431640625e-07
+    ],
+    "max": [
+      38.13409423828125,
+      15.277023315429688,
+      21.806171417236328
+    ],
+    "size": [
+      16.266357421875,
+      14.702926635742188,
+      21.806171417236328
+    ],
+    "triangles": 4624
+  },
+  {
+    "name": "i2_FingersTipX5V2-3",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-3.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      22.651596069335938,
+      24.52801513671875,
+      2.86102294921875e-06
+    ],
+    "max": [
+      42.074310302734375,
+      41.607269287109375,
+      23.131195068359375
+    ],
+    "size": [
+      19.422714233398438,
+      17.079254150390625,
+      23.13119125366211
+    ],
+    "triangles": 6024
+  },
+  {
+    "name": "i2_FingersTipX5V2-4",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-4.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      42.657806396484375,
+      0.0,
+      3.814697265625e-06
+    ],
+    "max": [
+      58.924163818359375,
+      14.702926635742188,
+      21.806171417236328
+    ],
+    "size": [
+      16.266357421875,
+      14.702926635742188,
+      21.806167602539062
+    ],
+    "triangles": 4624
+  },
+  {
+    "name": "i2_FingersTipX5V2-5",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-5.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      45.85980224609375,
+      18.029251098632812,
+      0.0
+    ],
+    "max": [
+      61.718994140625,
+      32.00303649902344,
+      21.036399841308594
+    ],
+    "size": [
+      15.85919189453125,
+      13.973785400390625,
+      21.036399841308594
+    ],
+    "triangles": 5516
+  },
+  {
+    "name": "i2_FingersTipX5V2-6",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-6.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      45.85980224609375,
+      34.74107360839844,
+      0.0
+    ],
+    "max": [
+      61.718994140625,
+      48.71485900878906,
+      21.036399841308594
+    ],
+    "size": [
+      15.85919189453125,
+      13.973785400390625,
+      21.036399841308594
+    ],
+    "triangles": 5516
+  },
+  {
+    "name": "i2_FingersTipX5V2-7",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-7.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      62.46368408203125,
+      0.5740966796875,
+      3.814697265625e-06
+    ],
+    "max": [
+      78.73004150390625,
+      15.277023315429688,
+      21.806171417236328
+    ],
+    "size": [
+      16.266357421875,
+      14.702926635742188,
+      21.806167602539062
+    ],
+    "triangles": 4624
+  },
+  {
+    "name": "i2_FingersTipX5V2-8",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-8.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      67.05810546875,
+      18.02923583984375,
+      3.814697265625e-06
+    ],
+    "max": [
+      82.91729736328125,
+      32.003021240234375,
+      21.03640365600586
+    ],
+    "size": [
+      15.85919189453125,
+      13.973785400390625,
+      21.036399841308594
+    ],
+    "triangles": 5516
+  },
+  {
+    "name": "i2_FingersTipX5V2-9",
+    "url": "assets/inmoov-v2/derived/i2_FingersTipX5V2-9.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "min": [
+      67.05810546875,
+      34.74107360839844,
+      2.86102294921875e-06
+    ],
+    "max": [
+      82.91729736328125,
+      48.71484375,
+      21.03640365600586
+    ],
+    "size": [
+      15.85919189453125,
+      13.973770141601562,
+      21.036399841308594
+    ],
+    "triangles": 5516
+  },
+  {
+    "name": "i2_CoverFingerV3-0",
+    "url": "assets/inmoov-v2/derived/i2_CoverFingerV3-0.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_CoverFingerV3.stl",
+    "min": [
+      0.0,
+      27.23865509033203,
+      0.0010251998901367188
+    ],
+    "max": [
+      89.00558471679688,
+      69.56952667236328,
+      32.30741882324219
+    ],
+    "size": [
+      89.00558471679688,
+      42.33087158203125,
+      32.306392669677734
+    ],
+    "triangles": 22024
+  },
+  {
+    "name": "i2_CoverFingerV3-1",
+    "url": "assets/inmoov-v2/derived/i2_CoverFingerV3-1.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_CoverFingerV3.stl",
+    "min": [
+      17.378162384033203,
+      0.0,
+      0.0
+    ],
+    "max": [
+      80.48204040527344,
+      21.572952270507812,
+      21.399152755737305
+    ],
+    "size": [
+      63.103878021240234,
+      21.572952270507812,
+      21.399152755737305
+    ],
+    "triangles": 5892
+  },
+  {
+    "name": "i2_LeftCoverFingerV3-0",
+    "url": "assets/inmoov-v2/derived/i2_LeftCoverFingerV3-0.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftCoverFingerV3.stl",
+    "min": [
+      -3.814697265625e-06,
+      0.0,
+      0.0
+    ],
+    "max": [
+      89.00558471679688,
+      42.33490753173828,
+      32.3105354309082
+    ],
+    "size": [
+      89.00558471679688,
+      42.33490753173828,
+      32.3105354309082
+    ],
+    "triangles": 25522
+  },
+  {
+    "name": "i2_LeftCoverThumbV3-0",
+    "url": "assets/inmoov-v2/derived/i2_LeftCoverThumbV3-0.stl",
+    "source": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftCoverThumbV3.stl",
+    "min": [
+      -7.62939453125e-06,
+      0.0,
+      0.0
+    ],
+    "max": [
+      63.103878021240234,
+      21.572959899902344,
+      21.399154663085938
+    ],
+    "size": [
+      63.103885650634766,
+      21.572959899902344,
+      21.399154663085938
+    ],
+    "triangles": 8720
+  },
+  {
+    "name": "Eye-R-AllPartsV2-0",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-0.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -44.733673095703125,
+      -27.353084564208984,
+      0.0
+    ],
+    "max": [
+      -38.98365783691406,
+      -3.6730804443359375,
+      4.0
+    ],
+    "size": [
+      5.7500152587890625,
+      23.680004119873047,
+      4.0
+    ],
+    "triangles": 600
+  },
+  {
+    "name": "Eye-R-AllPartsV2-1",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-1.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -41.11004638671875,
+      29.761810302734375,
+      0.0
+    ],
+    "max": [
+      -9.742698669433594,
+      61.12915802001953,
+      19.87030029296875
+    ],
+    "size": [
+      31.367347717285156,
+      31.367347717285156,
+      19.87030029296875
+    ],
+    "triangles": 3240
+  },
+  {
+    "name": "Eye-R-AllPartsV2-2",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-2.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -37.084014892578125,
+      7.62343692779541,
+      8.940696716308594e-07
+    ],
+    "max": [
+      -19.470569610595703,
+      25.23688507080078,
+      1.1847467422485352
+    ],
+    "size": [
+      17.613445281982422,
+      17.613449096679688,
+      1.1847457885742188
+    ],
+    "triangles": 4134
+  },
+  {
+    "name": "Eye-R-AllPartsV2-3",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-3.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -36.718162536621094,
+      -27.37676239013672,
+      0.0
+    ],
+    "max": [
+      -10.838157653808594,
+      27.78723907470703,
+      5.853004455566406
+    ],
+    "size": [
+      25.8800048828125,
+      55.16400146484375,
+      5.853004455566406
+    ],
+    "triangles": 514
+  },
+  {
+    "name": "Eye-R-AllPartsV2-4",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-4.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -28.923858642578125,
+      -31.12099838256836,
+      0.0
+    ],
+    "max": [
+      -23.9228515625,
+      -8.454998016357422,
+      6.75
+    ],
+    "size": [
+      5.001007080078125,
+      22.666000366210938,
+      6.75
+    ],
+    "triangles": 956
+  },
+  {
+    "name": "Eye-R-AllPartsV2-5",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-5.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -18.378177642822266,
+      -21.2309627532959,
+      0.0
+    ],
+    "max": [
+      -14.377201080322266,
+      -12.373964309692383,
+      3.0
+    ],
+    "size": [
+      4.0009765625,
+      8.856998443603516,
+      3.0
+    ],
+    "triangles": 724
+  },
+  {
+    "name": "Eye-R-AllPartsV2-6",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-6.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -9.423320770263672,
+      -41.082401275634766,
+      0.0
+    ],
+    "max": [
+      -3.7054977416992188,
+      11.281163215637207,
+      3.154512882232666
+    ],
+    "size": [
+      5.717823028564453,
+      52.363563537597656,
+      3.154512882232666
+    ],
+    "triangles": 1596
+  },
+  {
+    "name": "Eye-R-AllPartsV2-7",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-7.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -8.564781188964844,
+      6.418927192687988,
+      0.0
+    ],
+    "max": [
+      -4.564785003662109,
+      10.418929100036621,
+      2.5850906372070312
+    ],
+    "size": [
+      3.9999961853027344,
+      4.000001907348633,
+      2.5850906372070312
+    ],
+    "triangles": 1216
+  },
+  {
+    "name": "Eye-R-AllPartsV2-8",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-8.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -7.674072265625,
+      41.193241119384766,
+      0.0
+    ],
+    "max": [
+      31.685932159423828,
+      63.533233642578125,
+      18.67200469970703
+    ],
+    "size": [
+      39.36000442504883,
+      22.33999252319336,
+      18.67200469970703
+    ],
+    "triangles": 2268
+  },
+  {
+    "name": "Eye-R-AllPartsV2-9",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-9.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -7.346855163574219,
+      16.542354583740234,
+      0.0
+    ],
+    "max": [
+      32.05315017700195,
+      38.96135330200195,
+      18.67101287841797
+    ],
+    "size": [
+      39.40000534057617,
+      22.41899871826172,
+      18.67101287841797
+    ],
+    "triangles": 2280
+  },
+  {
+    "name": "Eye-R-AllPartsV2-10",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-10.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -3.439472198486328,
+      -41.0823974609375,
+      0.0
+    ],
+    "max": [
+      2.278350830078125,
+      11.28116512298584,
+      3.154512882232666
+    ],
+    "size": [
+      5.717823028564453,
+      52.363563537597656,
+      3.154512882232666
+    ],
+    "triangles": 1596
+  },
+  {
+    "name": "Eye-R-AllPartsV2-11",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-11.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      -2.5809326171875,
+      6.418927192687988,
+      0.0
+    ],
+    "max": [
+      1.4190635681152344,
+      10.418931007385254,
+      2.5850906372070312
+    ],
+    "size": [
+      3.9999961853027344,
+      4.000003814697266,
+      2.5850906372070312
+    ],
+    "triangles": 1216
+  },
+  {
+    "name": "Eye-R-AllPartsV2-12",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-12.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      2.8090438842773438,
+      -14.14765453338623,
+      0.0
+    ],
+    "max": [
+      26.18604278564453,
+      9.706347465515137,
+      13.369338989257812
+    ],
+    "size": [
+      23.376998901367188,
+      23.854001998901367,
+      13.369338989257812
+    ],
+    "triangles": 2458
+  },
+  {
+    "name": "Eye-R-AllPartsV2-13",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-13.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      4.274097442626953,
+      -41.872093200683594,
+      0.0
+    ],
+    "max": [
+      28.260135650634766,
+      -18.828014373779297,
+      36.380027770996094
+    ],
+    "size": [
+      23.986038208007812,
+      23.044078826904297,
+      36.380027770996094
+    ],
+    "triangles": 574
+  },
+  {
+    "name": "Eye-R-AllPartsV2-14",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-14.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      30.199569702148438,
+      -49.331382751464844,
+      0.0
+    ],
+    "max": [
+      37.11551284790039,
+      29.872112274169922,
+      2.0
+    ],
+    "size": [
+      6.915943145751953,
+      79.2034912109375,
+      2.0
+    ],
+    "triangles": 1068
+  },
+  {
+    "name": "Eye-R-AllPartsV2-15",
+    "url": "assets/inmoov-v2/derived/Eye-R-AllPartsV2-15.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "min": [
+      37.06919860839844,
+      -46.620059967041016,
+      7.62939453125e-06
+    ],
+    "max": [
+      44.99352264404297,
+      20.821269989013672,
+      2.0000076293945312
+    ],
+    "size": [
+      7.924324035644531,
+      67.44132995605469,
+      2.0
+    ],
+    "triangles": 1050
+  },
+  {
+    "name": "Eye-L-AllPartsV2-0",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-0.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -39.21842956542969,
+      -46.620059967041016,
+      7.62939453125e-06
+    ],
+    "max": [
+      -31.294099807739258,
+      20.821269989013672,
+      2.0000076293945312
+    ],
+    "size": [
+      7.92432975769043,
+      67.44132995605469,
+      2.0
+    ],
+    "triangles": 1050
+  },
+  {
+    "name": "Eye-L-AllPartsV2-1",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-1.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -31.340415954589844,
+      -49.331382751464844,
+      0.0
+    ],
+    "max": [
+      -24.42447280883789,
+      29.872112274169922,
+      2.0
+    ],
+    "size": [
+      6.915943145751953,
+      79.2034912109375,
+      2.0
+    ],
+    "triangles": 1068
+  },
+  {
+    "name": "Eye-L-AllPartsV2-2",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-2.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -26.278053283691406,
+      16.542354583740234,
+      0.0
+    ],
+    "max": [
+      13.121952056884766,
+      38.96135330200195,
+      18.67101287841797
+    ],
+    "size": [
+      39.40000534057617,
+      22.41899871826172,
+      18.67101287841797
+    ],
+    "triangles": 2280
+  },
+  {
+    "name": "Eye-L-AllPartsV2-3",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-3.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -25.91083526611328,
+      41.193241119384766,
+      0.0
+    ],
+    "max": [
+      13.449169158935547,
+      63.533233642578125,
+      18.67200469970703
+    ],
+    "size": [
+      39.36000442504883,
+      22.33999252319336,
+      18.67200469970703
+    ],
+    "triangles": 2268
+  },
+  {
+    "name": "Eye-L-AllPartsV2-4",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-4.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -22.48503875732422,
+      -41.872093200683594,
+      0.0
+    ],
+    "max": [
+      1.5009994506835938,
+      -18.828014373779297,
+      36.380027770996094
+    ],
+    "size": [
+      23.986038208007812,
+      23.044078826904297,
+      36.380027770996094
+    ],
+    "triangles": 574
+  },
+  {
+    "name": "Eye-L-AllPartsV2-5",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-5.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      -20.410945892333984,
+      -14.14765453338623,
+      0.0
+    ],
+    "max": [
+      2.966053009033203,
+      9.706347465515137,
+      13.369338989257812
+    ],
+    "size": [
+      23.376998901367188,
+      23.854001998901367,
+      13.369338989257812
+    ],
+    "triangles": 2458
+  },
+  {
+    "name": "Eye-L-AllPartsV2-6",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-6.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      3.496746063232422,
+      -41.0823974609375,
+      0.0
+    ],
+    "max": [
+      9.214569091796875,
+      11.28116512298584,
+      3.154512882232666
+    ],
+    "size": [
+      5.717823028564453,
+      52.363563537597656,
+      3.154512882232666
+    ],
+    "triangles": 1596
+  },
+  {
+    "name": "Eye-L-AllPartsV2-7",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-7.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      4.3560333251953125,
+      6.418927192687988,
+      0.0
+    ],
+    "max": [
+      8.356029510498047,
+      10.418931007385254,
+      2.5850906372070312
+    ],
+    "size": [
+      3.9999961853027344,
+      4.000003814697266,
+      2.5850906372070312
+    ],
+    "triangles": 1216
+  },
+  {
+    "name": "Eye-L-AllPartsV2-8",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-8.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      9.480594635009766,
+      -41.082401275634766,
+      0.0
+    ],
+    "max": [
+      15.198417663574219,
+      11.281163215637207,
+      3.154512882232666
+    ],
+    "size": [
+      5.717823028564453,
+      52.363563537597656,
+      3.154512882232666
+    ],
+    "triangles": 1596
+  },
+  {
+    "name": "Eye-L-AllPartsV2-9",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-9.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      10.339881896972656,
+      6.418927192687988,
+      0.0
+    ],
+    "max": [
+      14.33987808227539,
+      10.418929100036621,
+      2.5850906372070312
+    ],
+    "size": [
+      3.9999961853027344,
+      4.000001907348633,
+      2.5850906372070312
+    ],
+    "triangles": 1216
+  },
+  {
+    "name": "Eye-L-AllPartsV2-10",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-10.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      15.51779556274414,
+      29.761810302734375,
+      0.0
+    ],
+    "max": [
+      46.8851432800293,
+      61.12915802001953,
+      19.87030029296875
+    ],
+    "size": [
+      31.367347717285156,
+      31.367347717285156,
+      19.87030029296875
+    ],
+    "triangles": 3240
+  },
+  {
+    "name": "Eye-L-AllPartsV2-11",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-11.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      16.61325454711914,
+      -27.37676239013672,
+      0.0
+    ],
+    "max": [
+      42.49325942993164,
+      27.78723907470703,
+      5.853004455566406
+    ],
+    "size": [
+      25.8800048828125,
+      55.16400146484375,
+      5.853004455566406
+    ],
+    "triangles": 514
+  },
+  {
+    "name": "Eye-L-AllPartsV2-12",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-12.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      20.152297973632812,
+      -21.2309627532959,
+      0.0
+    ],
+    "max": [
+      24.153274536132812,
+      -12.373964309692383,
+      3.0
+    ],
+    "size": [
+      4.0009765625,
+      8.856998443603516,
+      3.0
+    ],
+    "triangles": 724
+  },
+  {
+    "name": "Eye-L-AllPartsV2-13",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-13.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      25.24566650390625,
+      7.62343692779541,
+      8.940696716308594e-07
+    ],
+    "max": [
+      42.85911178588867,
+      25.23688507080078,
+      1.1847467422485352
+    ],
+    "size": [
+      17.613445281982422,
+      17.613449096679688,
+      1.1847457885742188
+    ],
+    "triangles": 4134
+  },
+  {
+    "name": "Eye-L-AllPartsV2-14",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-14.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      29.697948455810547,
+      -31.12099838256836,
+      0.0
+    ],
+    "max": [
+      34.69895553588867,
+      -8.454998016357422,
+      6.75
+    ],
+    "size": [
+      5.001007080078125,
+      22.666000366210938,
+      6.75
+    ],
+    "triangles": 956
+  },
+  {
+    "name": "Eye-L-AllPartsV2-15",
+    "url": "assets/inmoov-v2/derived/Eye-L-AllPartsV2-15.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "min": [
+      44.75875473022461,
+      -27.353084564208984,
+      0.0
+    ],
+    "max": [
+      50.50876998901367,
+      -3.6730804443359375,
+      4.0
+    ],
+    "size": [
+      5.7500152587890625,
+      23.680004119873047,
+      4.0
+    ],
+    "triangles": 600
+  },
+  {
+    "name": "Eye-R-BaseV5-0",
+    "url": "assets/inmoov-v2/derived/Eye-R-BaseV5-0.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-R-BaseV5.stl",
+    "min": [
+      -29.190021514892578,
+      -36.467315673828125,
+      -1.344367054744583e-13
+    ],
+    "max": [
+      31.637338638305664,
+      53.93780517578125,
+      25.85688018798828
+    ],
+    "size": [
+      60.827362060546875,
+      90.40512084960938,
+      25.85688018798828
+    ],
+    "triangles": 1566
+  },
+  {
+    "name": "Eye-L-BaseV5-0",
+    "url": "assets/inmoov-v2/derived/Eye-L-BaseV5-0.stl",
+    "source": "assets/inmoov-v2/i2Eyes/Eye-L-BaseV5.stl",
+    "min": [
+      -31.288057327270508,
+      -36.467315673828125,
+      -1.344367054744583e-13
+    ],
+    "max": [
+      29.539302825927734,
+      53.93780517578125,
+      25.85688018798828
+    ],
+    "size": [
+      60.827362060546875,
+      90.40512084960938,
+      25.85688018798828
+    ],
+    "triangles": 1566
+  }
+]

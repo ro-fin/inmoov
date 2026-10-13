@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RoboAttis | InMoov Nano Calibrator & Controller</title>
+<style>
+:root{color-scheme:dark;font-family:Segoe UI,system-ui,sans-serif;background:#0b111b;color:#edf4ff}*{box-sizing:border-box}body{max-width:1500px;margin:auto;padding:28px}h1{margin:8px 0;font-size:clamp(25px,4vw,36px)}p{color:#adbed3;line-height:1.6}button,input{font:inherit}button{cursor:pointer;background:#21364e;color:white;border:1px solid #476078;border-radius:8px;padding:10px 13px}button:hover:enabled{border-color:#67dec3}button:disabled{opacity:.4;cursor:default}.primary{background:#147365}.danger{background:#862a3c}.home{background:#274d83}.recording{background:#ad344b}header,.toolbar,.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.toolbar{margin:18px 0}.brand{flex:1}small{letter-spacing:2px;color:#67dec3}#status,.sequence{padding:18px;background:#142336;border:1px solid #30415a;border-radius:12px}#status{margin:18px 0}.sequence h2{color:#edf4ff}.sequence p{margin:8px 0}.sequence .toolbar{margin-bottom:10px}#sequenceStatus{color:#67dec3}#cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(305px,1fr));gap:16px}article{background:#142031;border:1px solid #30415a;border-radius:14px;padding:18px}article.active{border-color:#55d8b6}h2{margin:0 0 12px;color:#55d8b6}.cardtop{display:flex;justify-content:space-between}.badge{font-size:12px;color:#a9bbd3}input{background:#0c1523;color:white;border:1px solid #415773;border-radius:6px;padding:8px;width:100%}input[type=range]{padding:0;margin:18px 0;accent-color:#55d8b6}label{display:block;color:#adbed3;font-size:13px}label input{margin:5px 0 10px}.limits{display:grid;grid-template-columns:1fr 1fr;gap:12px}.readout{font-size:27px;margin:8px 0}.readout span{font-size:14px;color:#a9bbd3}.position{display:flex;align-items:center;gap:8px}.position input{width:95px}.position label{display:flex;gap:8px;align-items:center}.hint{font-size:12px;color:#adbed3;line-height:1.5}.actions{margin-top:10px}.actions button{flex:1}summary{cursor:pointer;margin:18px 0 10px}#log{white-space:pre-wrap;font:12px monospace;color:#93abc5;max-height:140px;overflow:auto}button:focus-visible,input:focus-visible{outline:2px solid #67dec3;outline-offset:3px}@media(max-width:600px){body{padding:14px}#cards{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><div class="brand"><small>ROBOATTIS STUDIO / INMOOV</small><h1>Nano calibrator & controller</h1></div><button id="connect" class="primary">Connect Nano</button><button id="stop" class="danger" disabled>Emergency off</button></header>
+<p>Nano expansion board · 12 servo outputs · D2–D13.<br>Use Home 90° on each servo, then align its horn mechanically. 90° sends 1500 µs; the displayed angle is a command estimate, not measured position. Use external servo power with a common ground.</p>
+<div id="status" role="status">Ready. Connect your Nano and select its USB serial port.</div>
+<section class="sequence" aria-label="Motion recording">
+<h2>Record a movement</h2>
+<p>Start recording, move your servos, then finish. Your starting pose, movements, off commands and pauses are captured.</p>
+<div class="toolbar"><button id="record" class="primary" disabled>Start recording</button><button id="finish" disabled>Finish recording</button><button id="play" class="home" disabled>Replay in loop</button><button id="stopReplay" disabled>Stop replay · hold pose</button></div>
+<div id="sequenceStatus" role="status">No recording yet.</div>
+<p class="hint">Replay returns to the recorded starting pose on every loop. Stop replay holds the last pose; Emergency off releases all outputs. Keep this tab visible and the Nano connected during replay. Up to 10 minutes / 15,000 commands.</p>
+</section>
+<div class="toolbar"><button id="save">Save session</button><button id="export">Export JSON</button><button id="import">Import JSON</button><input id="file" type="file" accept=".json" hidden><span class="hint">Firmware v3 homes every servo to 90° on power-up/reset and holds for alignment. Save includes profiles and recording.</span></div>
+<section id="cards" aria-label="Servo controls"></section><details><summary>Connection log</summary><pre id="log"></pre></details>
+<script src="nano_motion.js"></script><script src="nano_calibrator.js"></script>
+</body></html>

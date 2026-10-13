@@ -1,0 +1,10 @@
+{
+  "port": "COM11",
+  "identity": "PONG,ROBOATTIS,NANO,ARMS,8,115200,D2-D10-SKIP-D3,V6",
+  "version": "VERSION,ARMS,V6,270DEG,SKIP-D3",
+  "outputs": "all off",
+  "pingSamples": 30,
+  "medianRoundTripMs": 6.24,
+  "maximumRoundTripMs": 7.05,
+  "angleChecks": "passed"
+}

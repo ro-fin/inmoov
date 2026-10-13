@@ -1,0 +1,830 @@
+[
+  {
+    "name": "BottomTeethV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/BottomTeethV1.stl",
+    "dimensions": [
+      56.69,
+      28.16,
+      15.92
+    ],
+    "triangles": 217558,
+    "sha256": "8c9fc036e95ef0261552c3f97cfd2d48c639ac72f69c3c5ac2aa245544b93b5b"
+  },
+  {
+    "name": "FaceHolderLeftV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/FaceHolderLeftV5.stl",
+    "dimensions": [
+      59.01,
+      107.79,
+      18.59
+    ],
+    "triangles": 1630,
+    "sha256": "49b48441b14f8fedc98292c7d0cb1c8d9d0efe9f398d0e0d99b7638f0d05ccbb"
+  },
+  {
+    "name": "FaceHolderRightV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/FaceHolderRightV5.stl",
+    "dimensions": [
+      47.19,
+      107.79,
+      18.59
+    ],
+    "triangles": 1468,
+    "sha256": "1b71f421b366c56ac5e4405117af92daca570cada8f942756a08ce506f5d267f"
+  },
+  {
+    "name": "ForHeadsV4",
+    "group": "Head",
+    "url": "assets/inmoov-v2/ForHeadsV4.stl",
+    "dimensions": [
+      24.09,
+      24.32,
+      33.6
+    ],
+    "triangles": 1976,
+    "sha256": "6fa62cf4456c3dc454df2702ab2dfc87e4a5523de960d334cf0d9cb376e6c057"
+  },
+  {
+    "name": "i2_Adapter1109MG",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_Adapter1109MG.stl",
+    "dimensions": [
+      20.8,
+      58.93,
+      19.76
+    ],
+    "triangles": 3024,
+    "sha256": "f1002ab0b22b7b5b8c45eb2f6ca7a9b372b5be258b779fb75fb8f9cbf549ab68"
+  },
+  {
+    "name": "i2_LeftCoverFingerV3",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftCoverFingerV3.stl",
+    "dimensions": [
+      89.01,
+      42.33,
+      32.31
+    ],
+    "triangles": 25522,
+    "sha256": "0f400646f39753373ff06f7f10a5089b217b0f33acf33bbea4c7bc3e272df873"
+  },
+  {
+    "name": "i2_LeftCoverThumbV3",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftCoverThumbV3.stl",
+    "dimensions": [
+      63.1,
+      21.57,
+      21.4
+    ],
+    "triangles": 8720,
+    "sha256": "aae6fe05219013144387368e03462ff3b48648c3b24b33ff62ff89240e75fe43"
+  },
+  {
+    "name": "i2_LeftHandCoverV1",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftHandCoverV1.stl",
+    "dimensions": [
+      90.18,
+      15.57,
+      107.07
+    ],
+    "triangles": 15666,
+    "sha256": "c534540c9a3b31d7db12a69e985862ef717eb8388bf6a45f9a22beeaad00e2f8"
+  },
+  {
+    "name": "i2_LeftHandCoverV2",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftHandCoverV2.stl",
+    "dimensions": [
+      90.18,
+      107.07,
+      15.57
+    ],
+    "triangles": 16426,
+    "sha256": "e45a35d0849e3dd72940dac6dc13232249916ec52ab784a739d58aefacfda6a7"
+  },
+  {
+    "name": "i2_LeftPalmCoverV2",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftPalmCoverV2.stl",
+    "dimensions": [
+      92.05,
+      15.55,
+      120.67
+    ],
+    "triangles": 15274,
+    "sha256": "08fa9a2a0a318ab236327afc9bb379abf368106086eb9ec76a41d8bc15ba36a5"
+  },
+  {
+    "name": "i2_LeftWristGearV1",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftWristGearV1.stl",
+    "dimensions": [
+      105.24,
+      78.11,
+      30.84
+    ],
+    "triangles": 74558,
+    "sha256": "2c9346fc3afb8279a80e41198cae52e0d4a74db10bb7813f8f8c7105541a045f"
+  },
+  {
+    "name": "i2_LeftWristLargeV2",
+    "group": "Left hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_LeftHand/i2_LeftWristLargeV2.stl",
+    "dimensions": [
+      112.57,
+      137.65,
+      24.53
+    ],
+    "triangles": 37892,
+    "sha256": "494e52d4d56a16613d72c4ec20242a64f4d8f350680b55d14b85dce720b28830"
+  },
+  {
+    "name": "i2_CoverFingerV3",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_CoverFingerV3.stl",
+    "dimensions": [
+      89.01,
+      69.57,
+      32.31
+    ],
+    "triangles": 27916,
+    "sha256": "a22fb4607b8e3d59a52d553c475eade29c702d82a214df5a20c277560542467d"
+  },
+  {
+    "name": "i2_FingersMoldX5V3",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersMoldX5V3.stl",
+    "dimensions": [
+      146.76,
+      59.84,
+      36.53
+    ],
+    "triangles": 75366,
+    "sha256": "869e8e7ac2fb905c458797dd4489d5631f246821eb85c3925a49864f4e2cd62a"
+  },
+  {
+    "name": "i2_FingersTipX5V2",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersTipX5V2.stl",
+    "dimensions": [
+      82.92,
+      48.71,
+      30.24
+    ],
+    "triangles": 51650,
+    "sha256": "201dc2a39ba3b40642b5844316a3190b87a9c77b6f54c38262cd607541868841"
+  },
+  {
+    "name": "i2_FingersX5V2",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_FingersX5V2.stl",
+    "dimensions": [
+      102.34,
+      87.69,
+      20.03
+    ],
+    "triangles": 63966,
+    "sha256": "99e95c3809e16a2f88eec48a1a7777b25fb28d2f71801d39dc277ad0847d2c6a"
+  },
+  {
+    "name": "i2_HandCoverV1",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_HandCoverV1.stl",
+    "dimensions": [
+      90.18,
+      15.56,
+      107.08
+    ],
+    "triangles": 15868,
+    "sha256": "5c24a153c486c62f8db7bfa39cd489b1e751bfa3748e35a04f1f93a9b845e86f"
+  },
+  {
+    "name": "i2_HandCoverV2",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_HandCoverV2.stl",
+    "dimensions": [
+      90.18,
+      15.56,
+      107.08
+    ],
+    "triangles": 16588,
+    "sha256": "722f1023509d4871b39de68474c65d65c8a79ee0ba9514f1ddf90945cc4884b2"
+  },
+  {
+    "name": "i2_PalmCoverV2",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_PalmCoverV2.stl",
+    "dimensions": [
+      92.05,
+      15.55,
+      120.67
+    ],
+    "triangles": 15274,
+    "sha256": "27f0410fd2f9f00447d169aa8c49ebb7ef1489b345234a4e5d1e09549108d95a"
+  },
+  {
+    "name": "i2_PulleyX5V1",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_PulleyX5V1.stl",
+    "dimensions": [
+      35.28,
+      51.99,
+      10.0
+    ],
+    "triangles": 30290,
+    "sha256": "3773aa15f87828bb69179d525b7dd87e5a100fc3a2bcbd7c510e995bec261bbb"
+  },
+  {
+    "name": "i2_WristGearV1",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_WristGearV1.stl",
+    "dimensions": [
+      105.24,
+      78.11,
+      30.84
+    ],
+    "triangles": 74558,
+    "sha256": "bf50557d8032bd7a84108f45793d1c6941b30df382160301e7dfc5d5c42786c6"
+  },
+  {
+    "name": "i2_WristLargeV2",
+    "group": "Right hand",
+    "url": "assets/inmoov-v2/hands/Inmoov-hand-i2/i2_RightHand/i2_WristLargeV2.stl",
+    "dimensions": [
+      112.57,
+      137.65,
+      24.53
+    ],
+    "triangles": 37900,
+    "sha256": "6c00cf5018ca36226bfb36d62c7f4a0429c2354fe4e0bb4b60157ffc00cd114d"
+  },
+  {
+    "name": "Eye-L-AllPartsV2",
+    "group": "Eyes",
+    "url": "assets/inmoov-v2/i2Eyes/Eye-L-AllPartsV2.stl",
+    "dimensions": [
+      89.73,
+      112.86,
+      36.38
+    ],
+    "triangles": 25490,
+    "sha256": "71b50d79fff514290fee41377cdcbdcf0b79286cec13d5554a00dde309259aac"
+  },
+  {
+    "name": "Eye-L-BaseV5",
+    "group": "Eyes",
+    "url": "assets/inmoov-v2/i2Eyes/Eye-L-BaseV5.stl",
+    "dimensions": [
+      60.83,
+      90.41,
+      25.86
+    ],
+    "triangles": 1566,
+    "sha256": "64bceea9d950a51debf386af983a11d4475ced1006f65fac22aa3ad2bcde0a9b"
+  },
+  {
+    "name": "Eye-R-AllPartsV2",
+    "group": "Eyes",
+    "url": "assets/inmoov-v2/i2Eyes/Eye-R-AllPartsV2.stl",
+    "dimensions": [
+      89.73,
+      112.86,
+      36.38
+    ],
+    "triangles": 25490,
+    "sha256": "79516667ebe91cdd67f01a05d30a117b64ebb2e679c6c6b2d289a6a202a7e2d5"
+  },
+  {
+    "name": "Eye-R-BaseV5",
+    "group": "Eyes",
+    "url": "assets/inmoov-v2/i2Eyes/Eye-R-BaseV5.stl",
+    "dimensions": [
+      60.83,
+      90.41,
+      25.86
+    ],
+    "triangles": 1566,
+    "sha256": "7b03d4f2254d7fcb6a53070a7a90a80c8c7d2923be51d3962b286138e8be561d"
+  },
+  {
+    "name": "CheekPullerV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/CheekPullerV3.stl",
+    "dimensions": [
+      30.63,
+      46.85,
+      9.84
+    ],
+    "triangles": 1936,
+    "sha256": "0f4a32019cb3421f715878b058c57b51fd72edab7230a7aad0cceb063993b65b"
+  },
+  {
+    "name": "EarLockV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/EarLockV1.stl",
+    "dimensions": [
+      121.87,
+      73.0,
+      12.67
+    ],
+    "triangles": 4408,
+    "sha256": "a70b73b76a0841384dfcdf0faba7331877bec29d9349703960e0e63d89370d18"
+  },
+  {
+    "name": "EyebrowSupportV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/EyebrowSupportV3.stl",
+    "dimensions": [
+      83.72,
+      73.58,
+      73.35
+    ],
+    "triangles": 1954,
+    "sha256": "12e22799553b885dcee8232b5cc55e11fc2f5c0bd348b243ad63d6c1cc3af6a5"
+  },
+  {
+    "name": "EyebrowV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/EyebrowV3.stl",
+    "dimensions": [
+      37.45,
+      46.09,
+      14.25
+    ],
+    "triangles": 4560,
+    "sha256": "db09666c20916162d833cf54da7286e8773de4a39a223a059bfba061e4363eaa"
+  },
+  {
+    "name": "ForHeadSupportV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/ForHeadSupportV2.stl",
+    "dimensions": [
+      83.74,
+      33.61,
+      22.01
+    ],
+    "triangles": 1548,
+    "sha256": "0ae913a4656cc4f79742ba0977ff8edf623f50c3bebafb8e6e88d630d0a6e8d6"
+  },
+  {
+    "name": "GearHolderV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/GearHolderV3.stl",
+    "dimensions": [
+      53.91,
+      104.46,
+      57.51
+    ],
+    "triangles": 1076,
+    "sha256": "c01a70ac027fa51d95d38a887f8d2384d9fabec91542808db3d98628e8d7e94a"
+  },
+  {
+    "name": "JawHingeV4",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/JawHingeV4.stl",
+    "dimensions": [
+      64.86,
+      34.92,
+      19.74
+    ],
+    "triangles": 472,
+    "sha256": "f4d23215c7eec52a337ae62b9d9c2ac3c621a88fdb709b4bc3a470ebcafe01e3"
+  },
+  {
+    "name": "JawPistonV1NoSupport",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/JawPistonV1NoSupport.stl",
+    "dimensions": [
+      95.98,
+      44.02,
+      34.6
+    ],
+    "triangles": 9564,
+    "sha256": "4a234f6c6a77fe3699093ea56c327458e5fcd7c5b42fb12223b3501167d838b6"
+  },
+  {
+    "name": "JawSupportV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/JawSupportV2.stl",
+    "dimensions": [
+      64.72,
+      102.3,
+      7.33
+    ],
+    "triangles": 1020,
+    "sha256": "6c50caa6c9d4ab1237206086d2fa9889feee445e45b08f641bb91840cb0f71c0"
+  },
+  {
+    "name": "JawV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/JawV5.stl",
+    "dimensions": [
+      116.83,
+      61.77,
+      66.88
+    ],
+    "triangles": 10838,
+    "sha256": "8ec30cf7ee3955d8b10577be5a630d405a1553545b6c17640170ea38c1bd1b7a"
+  },
+  {
+    "name": "LowBackV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/LowBackV5.stl",
+    "dimensions": [
+      136.08,
+      70.01,
+      65.58
+    ],
+    "triangles": 94752,
+    "sha256": "c518c6fb24804963f110acd6cdbb55f3701295c9473ae8990727c934f83863a3"
+  },
+  {
+    "name": "MainGearV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/MainGearV2.stl",
+    "dimensions": [
+      42.66,
+      42.67,
+      32.83
+    ],
+    "triangles": 2302,
+    "sha256": "e43f76d71c1417eb50c8ec36050350467e9ff4b34d4f2d144ac497a1296b29e4"
+  },
+  {
+    "name": "PCA9685ConnectV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/PCA9685ConnectV2.stl",
+    "dimensions": [
+      31.13,
+      77.99,
+      51.11
+    ],
+    "triangles": 3760,
+    "sha256": "38d3b0fc085e8f0f4e67f3992ed05e5087c9ebb64cceab708bad01ca2cb7bf35"
+  },
+  {
+    "name": "PCA9685supportV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/PCA9685supportV1.stl",
+    "dimensions": [
+      62.5,
+      25.0,
+      5.5
+    ],
+    "triangles": 3184,
+    "sha256": "0129afc2449761ba0de9bc41be78eabaf58c2d4056172026ad50139076807caa"
+  },
+  {
+    "name": "RingV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/RingV2.stl",
+    "dimensions": [
+      44.29,
+      44.29,
+      9.08
+    ],
+    "triangles": 912,
+    "sha256": "c0961c460e53fd82ee536d9af234881d98cab8cdd7570abe03d40c4a1753b250"
+  },
+  {
+    "name": "servoAdapterV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/servoAdapterV1.stl",
+    "dimensions": [
+      84.35,
+      30.49,
+      5.48
+    ],
+    "triangles": 778,
+    "sha256": "0ceadb45bd0aabc64fe51c8007b8aacb172abe40b4c22f1e1f254b47d13180b4"
+  },
+  {
+    "name": "ServoGearV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/ServoGearV2.stl",
+    "dimensions": [
+      42.66,
+      42.66,
+      44.97
+    ],
+    "triangles": 2352,
+    "sha256": "ce037874dc07b186d9e026bda67033ac947d9ffd11374c159b4cdb758b02eaf0"
+  },
+  {
+    "name": "servoHornAdapterV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/servoHornAdapterV1.stl",
+    "dimensions": [
+      31.53,
+      31.59,
+      13.76
+    ],
+    "triangles": 1600,
+    "sha256": "3ab19c514109bb587e5759a651a8e50a4a5117efa9b8d0d50e686ac6fe2a9419"
+  },
+  {
+    "name": "SkullServoFixV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/SkullServoFixV5.stl",
+    "dimensions": [
+      84.59,
+      128.83,
+      76.67
+    ],
+    "triangles": 3038,
+    "sha256": "1bf3886c1575c508c091b87b4339db36c5cc7ce1dc823374e3f574e07d20cfcc"
+  },
+  {
+    "name": "TeethTopHolderV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/TeethTopHolderV3.stl",
+    "dimensions": [
+      61.6,
+      51.29,
+      20.22
+    ],
+    "triangles": 1476,
+    "sha256": "21925dd7553d361464626e28c56cbaf425a1b5e22774b733ff51b53fcdf7d410"
+  },
+  {
+    "name": "TopBackskullV4",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/TopBackskullV4.stl",
+    "dimensions": [
+      134.92,
+      81.72,
+      54.35
+    ],
+    "triangles": 103456,
+    "sha256": "4e0184fcdb7c8168d0aca7a0ce46c62c15f0e56f69d7c77d4b8382bfd5099a8f"
+  },
+  {
+    "name": "TopskullFrontV1",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/TopskullFrontV1.stl",
+    "dimensions": [
+      133.36,
+      88.79,
+      56.95
+    ],
+    "triangles": 63924,
+    "sha256": "48c57695176fb53cb223df3a6978fc4a4bbc2edf816482b5d2e23a4d093224cd"
+  },
+  {
+    "name": "TopskullV5",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/TopskullV5.stl",
+    "dimensions": [
+      142.68,
+      80.51,
+      53.59
+    ],
+    "triangles": 46200,
+    "sha256": "c705d03aa915fabfacd96a00f5fe81de90181952dae9ce3a4febe00ccc61540a"
+  },
+  {
+    "name": "TopTeethV3",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/TopTeethV3.stl",
+    "dimensions": [
+      57.28,
+      29.3,
+      23.04
+    ],
+    "triangles": 30518,
+    "sha256": "712d88e0c5f72c80229dd0be4f3305c0581dd13cd0d18fac9d00b28fa86fdb54"
+  },
+  {
+    "name": "UpperLipV2",
+    "group": "Head",
+    "url": "assets/inmoov-v2/i2Head/UpperLipV2.stl",
+    "dimensions": [
+      26.46,
+      38.22,
+      29.25
+    ],
+    "triangles": 1034,
+    "sha256": "12a99ad3678ab69257e7e1268753287ed1450c809ef154c4cef2c2f4b255ab39"
+  },
+  {
+    "name": "FaceHolderV4",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/FaceHolderV4.stl",
+    "dimensions": [
+      84.13,
+      81.65,
+      18.6
+    ],
+    "triangles": 528,
+    "sha256": "1948108b990c0269b293c4d0bb30b79a634d9ab155eab4d7b4ed5299512d1167"
+  },
+  {
+    "name": "GearHolderV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/GearHolderV2.stl",
+    "dimensions": [
+      53.91,
+      91.64,
+      57.51
+    ],
+    "triangles": 934,
+    "sha256": "f0d7c141f871487679be3f17bf23f3936ad23d78d70262abd6ea98aeb654c12b"
+  },
+  {
+    "name": "NeckBoltsV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckBoltsV2.stl",
+    "dimensions": [
+      29.57,
+      31.75,
+      73.75
+    ],
+    "triangles": 1268,
+    "sha256": "6da7a3be8497c65163231c1a2a0d49f53f183f22d1df969d095909262cc4af73"
+  },
+  {
+    "name": "NeckJointLowerV5",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckJointLowerV5.stl",
+    "dimensions": [
+      43.5,
+      43.02,
+      59.41
+    ],
+    "triangles": 15080,
+    "sha256": "6584ede3d49e3e8755381edb9b4e601ece7297eacb586cfcbb9273a54b29a5b1"
+  },
+  {
+    "name": "NeckPistonBaseFrontV1",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPistonBaseFrontV1.stl",
+    "dimensions": [
+      38.71,
+      38.5,
+      100.49
+    ],
+    "triangles": 7152,
+    "sha256": "afa14aa98b74603b443df62e67df3061d61251112819321a82275292bbc684c0"
+  },
+  {
+    "name": "NeckPistonFrontV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPistonFrontV2.stl",
+    "dimensions": [
+      76.71,
+      43.89,
+      132.15
+    ],
+    "triangles": 13388,
+    "sha256": "486524f6604c28aa93b2a9570636167ade41078df62b3b753005d1a0f00f4672"
+  },
+  {
+    "name": "NeckPistonSideV1",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPistonSideV1.stl",
+    "dimensions": [
+      24.0,
+      23.99,
+      77.76
+    ],
+    "triangles": 7790,
+    "sha256": "7f2153856a93729de122fcc97c84d1d56fd17e9bcd8841f729c3c824057799d5"
+  },
+  {
+    "name": "NeckPistonV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPistonV2.stl",
+    "dimensions": [
+      23.8,
+      23.8,
+      101.29
+    ],
+    "triangles": 12500,
+    "sha256": "a3bec4001ab0e96092c57d5dc5b02449e173504955a6ae4f22240689d14ead75"
+  },
+  {
+    "name": "NeckPlateHighV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPlateHighV2.stl",
+    "dimensions": [
+      107.55,
+      89.42,
+      23.65
+    ],
+    "triangles": 34056,
+    "sha256": "b3b8fd68399b2bb428b41b108e62101e4112b05daf7a6ce3f8d1ebf2a2caaecc"
+  },
+  {
+    "name": "NeckPlateV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckPlateV2.stl",
+    "dimensions": [
+      111.35,
+      91.86,
+      11.12
+    ],
+    "triangles": 19494,
+    "sha256": "3dc71ce75de8b6d4b9c77d94ac8ca718c43f5cab4c9bbd0ae7543af904b9c502"
+  },
+  {
+    "name": "NeckServoHolderV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckServoHolderV2.stl",
+    "dimensions": [
+      55.0,
+      58.46,
+      22.0
+    ],
+    "triangles": 41184,
+    "sha256": "85b5ae5a8f0807170ab00715cbf3e88672e31b04820dbfdbd60e9873c5293327"
+  },
+  {
+    "name": "NeckServoPivotV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckServoPivotV2.stl",
+    "dimensions": [
+      95.98,
+      44.86,
+      23.17
+    ],
+    "triangles": 19152,
+    "sha256": "7d052f93f3d34007c418857ad53f74b6efe1ea194c8f94f18db460f3c3ced122"
+  },
+  {
+    "name": "NeckV3",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/NeckV3.stl",
+    "dimensions": [
+      60.3,
+      51.63,
+      94.87
+    ],
+    "triangles": 149444,
+    "sha256": "58bc10bd1e62db74900102903ecdcac79f337f63ce2153ce7509a216fde7511f"
+  },
+  {
+    "name": "PistonBaseSideV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/PistonBaseSideV2.stl",
+    "dimensions": [
+      58.08,
+      23.99,
+      17.28
+    ],
+    "triangles": 6944,
+    "sha256": "d885f3432f37e1eb75b7b672450718a970810edbffbda847065ddf3783136327"
+  },
+  {
+    "name": "SkullServoFixV1",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/SkullServoFixV1.stl",
+    "dimensions": [
+      64.46,
+      107.35,
+      76.67
+    ],
+    "triangles": 1532,
+    "sha256": "4d4fe6833c779697c58bd7ce2b25d711bf660773579a7f2a9cc9e33fa7b21f5d"
+  },
+  {
+    "name": "SpeakerMouthHolderV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/SpeakerMouthHolderV2.stl",
+    "dimensions": [
+      55.65,
+      38.92,
+      89.76
+    ],
+    "triangles": 2800,
+    "sha256": "67367b919a2c089794f2df57d9b27b9908f9aef1b5e68fc5367a1c2f6418259b"
+  },
+  {
+    "name": "ThroatHolderV2",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/ThroatHolderV2.stl",
+    "dimensions": [
+      69.42,
+      31.49,
+      17.53
+    ],
+    "triangles": 416,
+    "sha256": "7e40e5bfd80619dfcb04fb5288ab8f2cf39dd87cce2dc16a8a584adf8d42a65e"
+  },
+  {
+    "name": "ThroatHoleV3",
+    "group": "Neck",
+    "url": "assets/inmoov-v2/Neck/ThroatHoleV3.stl",
+    "dimensions": [
+      54.59,
+      64.81,
+      34.55
+    ],
+    "triangles": 286,
+    "sha256": "be9afbacb34084e73f088ca7c6baaa4e2f9dfdd1253049b367452e9d7837da7e"
+  }
+]

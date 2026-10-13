@@ -1,0 +1,63 @@
+{
+  "format": "RoboAttis-Nano-Arms",
+  "version": 2,
+  "servos": [
+    {
+      "pin": 2,
+      "name": "Left omoplate",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1600
+    },
+    {
+      "pin": 4,
+      "name": "Left rotate",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 5,
+      "name": "Left shoulder",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 6,
+      "name": "Left bicep",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 7,
+      "name": "Right omoplate",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 8,
+      "name": "Right rotate",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 9,
+      "name": "Right shoulder",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    },
+    {
+      "pin": 10,
+      "name": "Right bicep",
+      "minUs": 500,
+      "maxUs": 2500,
+      "restUs": 1500
+    }
+  ],
+  "sequence": null
+}

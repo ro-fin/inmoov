@@ -1,0 +1,8 @@
+{
+  "name": "roboattis-inmoov-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {"three": "0.180.0", "urdf-loader": "0.12.6"},
+  "devDependencies": {"@playwright/test": "1.55.1"}
+}

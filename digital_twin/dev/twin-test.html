@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>twin test</title>
+<script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
+<style>html,body{margin:0;height:100%;background:#dfe3e6;font:12px sans-serif}#s{position:fixed;left:8px;top:6px}</style></head><body><div id="s">loading</div>
+<script type="module">
+// Dev-only: twin-test.html?pose=leftShoulder:90,rightBicep:80&cam=front|side|head|lhand|rhand&explode=0.5&xray=1
+import * as THREE from 'three';
+import {InMoovTwin} from '../twin.js';
+const q=new URLSearchParams(location.search);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xdfe3e6);
+scene.add(new THREE.HemisphereLight(0xffffff,0x888888,2.2));const d=new THREE.DirectionalLight(0xffffff,2);d.position.set(2,4,5);scene.add(d);
+const r=new THREE.WebGLRenderer({antialias:true});r.setSize(innerWidth,innerHeight);document.body.append(r.domElement);
+const cam=new THREE.PerspectiveCamera(35,innerWidth/innerHeight,.01,50);
+const t=new InMoovTwin();scene.add(t.root);
+t.load(p=>s.textContent='loading '+Math.round(p*100)+'%').then(()=>{
+  for(const kv of (q.get('pose')||'').split(',').filter(Boolean)){const [k,v]=kv.split(':');t.set(k,+v);}
+  if(q.get('explode'))t.explode(+q.get('explode'));if(q.get('xray'))t.setXray(true);
+  const box=new THREE.Box3().setFromObject(t.root),c=box.getCenter(new THREE.Vector3());
+  const views={front:[[0,0.95,4.2],[0,.9,0]],side:[[4.2,.95,0],[0,.9,0]],back:[[0,1,-4],[0,.9,0]],top:[[0,5,0.01],[0,1,0]],
+   head:[[.25,1.62,.75],[0,1.58,0]],lhand:[[.95,.78,0],[.2,.78,0]],rhand:[[-.95,.78,0],[-.2,.78,0]],rpalm:[[-.2,.78,.8],[-.2,.78,0]],torso:[[.6,1.4,1.5],[0,1.2,0]],q3:[[2.6,1.5,3],[0,.9,0]]};
+  const v=views[q.get('cam')||'front'];cam.position.fromArray(v[0]);cam.lookAt(new THREE.Vector3(...v[1]));
+  r.render(scene,cam);
+  s.textContent='size mm '+t.measure.size.join(' x ')+' | meshes '+t.meshes.length+' | '+Object.entries(t.measure.lines).map(([k,l])=>k+'='+l.mm).join(' ')+' | box '+box.min.toArray().map(v=>v.toFixed(2))+' / '+box.max.toArray().map(v=>v.toFixed(2));
+  window.twin=t;if(q.get('eval'))s.textContent=String(new Function('t','THREE',q.get('eval'))(t,THREE));
+}).catch(e=>{s.textContent='ERR '+e.stack;});
+</script></body></html>

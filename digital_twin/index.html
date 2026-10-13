@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InMoov Studio · RoboAttis</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app.css">
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+ <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></symbol>
+ <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></symbol>
+ <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></symbol>
+ <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></symbol>
+ <symbol id="i-xray" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16" opacity=".6"/></symbol>
+ <symbol id="i-grid" viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/><rect x="3" y="3" width="18" height="18" rx="2"/></symbol>
+ <symbol id="i-dim" viewBox="0 0 24 24"><path d="M4 7v10M20 7v10M4 12h16M7 9l-3 3 3 3M17 9l3 3-3 3"/></symbol>
+ <symbol id="i-room" viewBox="0 0 24 24"><path d="M3 20V8l9-5 9 5v12"/><path d="M9 20v-6h6v6"/></symbol>
+ <symbol id="i-fit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+ <symbol id="i-orbit" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></symbol>
+ <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+ <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 18 9 12l6-6"/></symbol>
+ <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+ <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/></symbol>
+</svg>
+
+<header class="topbar">
+ <a class="brand" href="./" aria-label="InMoov Studio home"><span class="brand-mark">R·</span><span><b>InMoov Studio</b><small>RoboAttis · Digital twin</small></span></a>
+ <nav class="tabs" role="tablist" aria-label="Workspace">
+  <button role="tab" data-tab="control" aria-selected="true"><svg class="icon"><use href="#i-sliders"/></svg><span class="t">Calibration</span></button>
+  <button role="tab" data-tab="inspect" aria-selected="false"><svg class="icon"><use href="#i-ruler"/></svg><span class="t">Inspect</span></button>
+  <button role="tab" data-tab="spares" aria-selected="false"><svg class="icon"><use href="#i-box"/></svg><span class="t">Spares</span></button>
+  <button role="tab" data-tab="motion" aria-selected="false"><svg class="icon"><use href="#i-play"/></svg><span class="t">Motion</span></button>
+ </nav>
+ <div class="top-right">
+  <div class="segmented" role="group" aria-label="Mode"><button id="modePreview" aria-pressed="true">Preview</button><button id="modeRobot" aria-pressed="false">Robot</button></div>
+  <div class="link-state"><span class="dot" id="linkDot"></span><span id="linkText">Offline</span><small id="linkPort"></small><button id="connectBtn" class="primary">Connect</button></div>
+  <button class="ghost" id="menuBtn" aria-label="Session and about" title="Session & about"><svg class="icon"><use href="#i-dots"/></svg></button>
+  <button class="estop" id="estop" disabled title="Emergency off (Esc)"><svg class="icon"><use href="#i-stop"/></svg><span class="t">E-STOP</span></button>
+ </div>
+</header>
+
+<main class="layout">
+ <section class="stage">
+  <div id="viewport">
+   <div id="loading" role="status"><strong>Assembling your InMoov</strong><div class="progress"><i id="loadBar"></i></div><small class="muted" id="loadText">Loading Gael Langevin's original VinMoov assembly…</small><button id="retryView" hidden>Reload 3D view</button></div>
+   <div id="renderStatus" class="glass render-status" role="status" hidden></div>
+   <div id="controlSessionNotice" class="glass control-session-notice" hidden>
+    <strong>Restore control session</strong>
+    <p>This tab needs pairing before it can control the Nano. Enter a one-time code, or run PAIR_ARM_CALIBRATOR.bat to generate one.</p>
+    <form id="pairSessionForm"><label for="pairSessionCode">Eight-digit pairing code</label><div class="btn-row"><input id="pairSessionCode" type="text" inputmode="numeric" pattern="[0-9]{8}" maxlength="8" autocomplete="off" required><button id="pairSessionSubmit" class="primary" type="submit">Restore control</button></div></form>
+    <p id="pairSessionStatus" role="status">Pairing restores access; it does not move or enable servos.</p>
+   </div>
+
+   <div class="hud hud-tl std-only">
+    <div class="hud-title"><span id="sceneTitle">InMoov · 1 : 1 digital twin</span><span class="chip accent" id="modeChip">Preview · no hardware</span></div>
+    <div class="hud-sub" id="sceneSub">Genuine VinMoov assembly · 1698 mm · drag to orbit, scroll to zoom, click a part</div>
+   </div>
+   <div class="hud hud-tr std-only">
+    <button class="tool glass" id="tXray" title="See through printed shells"><svg class="icon"><use href="#i-xray"/></svg>X-ray</button>
+    <button class="tool glass" id="tDims" title="Show key dimensions"><svg class="icon"><use href="#i-dim"/></svg>Dimensions</button>
+    <button class="tool glass" id="tMeasure" title="Measure between two points"><svg class="icon"><use href="#i-ruler"/></svg>Measure</button>
+    <button class="tool glass" id="tGrid" title="100 mm floor grid"><svg class="icon"><use href="#i-grid"/></svg>Grid</button>
+    <button class="tool glass" id="tScene" title="Switch to the Finstein cabin"><svg class="icon"><use href="#i-room"/></svg><span>Cabin</span></button>
+    <button class="tool glass" id="tFull" title="Full view"><svg class="icon"><use href="#i-expand"/></svg>Full view</button>
+   </div>
+   <div class="hud hud-bl">
+    <div class="glass explode" title="Separate the assembly into its sections"><span>Assembled</span><input id="explode" type="range" min="0" max="1" step="0.01" value="0" aria-label="Exploded view"><span>Exploded</span></div>
+   </div>
+   <div class="hud hud-bc"><div class="glass views" role="group" aria-label="Camera views">
+    <button data-view="front" class="on">Front</button><button data-view="three">¾</button><button data-view="side">Side</button><button data-view="back">Back</button><button data-view="head">Head</button><button data-view="hands">Hands</button>
+   </div></div>
+   <div class="hud hud-br std-only">
+    <button class="tool glass" id="tOrbit" title="Auto orbit"><svg class="icon"><use href="#i-orbit"/></svg></button>
+    <button class="tool glass" id="tFit" title="Fit the robot"><svg class="icon"><use href="#i-fit"/></svg></button>
+   </div>
+   <div class="glass measure-hint" id="measureHint" hidden>Click two points on the robot to measure · <b>Esc</b> to finish</div>
+
+   <!-- Full view HUD -->
+   <div class="hud imm-bar imm-only">
+    <div class="glass"><button class="ghost" id="backStudio"><svg class="icon"><use href="#i-back"/></svg>Back to Studio</button><button class="ghost" id="immControls">Controls</button></div>
+    <div class="glass"><span class="dot" id="immDot"></span><span id="immState">Preview · no hardware</span><button class="tool" id="immScene"><svg class="icon"><use href="#i-room"/></svg><span>Cabin</span></button><button class="estop" id="immStop" disabled><svg class="icon"><use href="#i-stop"/></svg>E-STOP</button></div>
+   </div>
+   <section class="hud glass imm-panel imm-only" id="immPanel" aria-label="Quick control" hidden>
+    <button id="immControlsClose" class="ghost" aria-label="Hide controls">Hide controls ×</button>
+    <div class="eyebrow">Touch the robot to pick a joint</div>
+    <select id="immJoint" aria-label="Joint"></select>
+    <div class="btn-row"><button id="immRobotMode">Use Robot mode</button><button id="immConnect">Connect Nano</button></div>
+    <p id="immControlStatus" class="readout" role="status"></p>
+    <div class="dial-top"><div class="big" id="immValue">0<small>°</small></div><span class="chip" id="immChip">Preview</span></div>
+    <input type="range" id="immSlider" aria-label="Joint position">
+    <div class="btn-row"><button id="immMinus">−</button><button id="immHome">Home</button><button id="immPlus">+</button></div>
+    <div class="btn-row" id="immPower"><button id="immEnable" class="primary">Enable at home</button><button id="immRelease">Release</button></div>
+    <div class="eyebrow" id="immGestureLabel">Gestures · preview</div>
+    <div class="imm-gestures" id="immGestures"></div>
+    <button id="immMotion" hidden>Open robot hand signs</button>
+   </section>
+   <section class="hud glass profile" id="profile" hidden><button class="x" id="profileClose" aria-label="Close">×</button><img id="profilePhoto" alt=""><div><span class="eyebrow">Finstein · Leadership</span><h3 id="profileName"></h3><p id="profileRole"></p><p id="profileCred"></p><a href="https://finstein.ai/aboutus.html" target="_blank" rel="noopener">Meet the team ↗</a></div></section>
+  </div>
+ </section>
+
+ <aside class="panel">
+  <!-- CONTROL -->
+  <div data-panel="control">
+   <section class="panel-section calibration-start">
+    <h2>Servo calibrator</h2>
+    <p class="muted">Select a joint, enable it at home, then adjust its position within the saved limits.</p>
+    <label>Connected arm joints<select id="calibrationJoint" aria-label="Joint to calibrate"></select></label>
+    <p id="calibrationStatus" class="readout" role="status"></p>
+    <div class="btn-row"><button id="calibrationSetup" class="primary">Connect Nano</button><button id="calibrationSave">Save settings</button><button id="showHandSigns">Hand signs ↓</button></div>
+   </section>
+   <section class="panel-section" id="jointCard">
+    <div class="jcard-head"><div><div class="eyebrow" id="jGroup">Left arm</div><h2 id="jName">Left omoplate</h2><div class="muted" id="jHint">Lift the arm outward</div></div><span class="chip pin" id="jPin">D2</span></div>
+    <div class="status-line"><span class="dot" id="jDot"></span><span id="jState">Preview ready</span><span class="chip" id="jAck">SIMULATED</span></div>
+    <div class="dial">
+     <div class="dial-top"><div><div class="eyebrow" id="jValueLabel">Servo angle</div><div class="big"><span id="jValue">0</span><small id="jValueUnit">°</small></div></div><div class="twin-angle" id="jTwinWrap">Twin joint<br><b id="jTwin">0°</b></div></div>
+     <input type="range" id="jSlider" aria-label="Selected joint position">
+     <div class="range-ends"><span id="jMin">0°</span><span id="jMax">270°</span></div>
+     <div class="btn-row"><button id="jMinus">−1°</button><button id="jHome">Home</button><button id="jPlus">+1°</button></div>
+     <div class="btn-row" id="jPower" hidden><button id="jEnable" class="primary">Enable at home</button><button id="jRelease">Release</button></div>
+     <div class="goto" id="jGoto" hidden><input id="jAngle" type="number" step="0.1" aria-label="Servo angle in degrees"><button id="jApply">Go to angle</button></div>
+     <p class="readout" id="jReadout">Move the slider to preview this joint.</p>
+     <p class="safety-readout" id="safetyReadout" hidden></p>
+    </div>
+    <div id="jHardware">
+     <details class="acc" open><summary>Pulse limits &amp; home</summary><div class="body">
+      <p id="limitsHelp" class="muted"></p>
+      <p class="muted">Release the joint before changing limits.</p>
+      <div class="fields"><label>Min µs<input id="minUs" type="number" min="500" max="2500"></label><label>Max µs<input id="maxUs" type="number" min="500" max="2500"></label><label>Home µs<input id="restUs" type="number" min="500" max="2500"></label></div>
+      <div class="btn-row"><button id="applyLimits">Apply limits</button><button id="setHome">Use current as home</button></div>
+      <label class="switch">Reverse this servo<input type="checkbox" id="reverseServo"></label>
+      <p class="muted">Set direction per joint to match its mounting. Reversal keeps the twin motion consistent. Save the session to keep it.</p>
+     </div></details>
+     <details class="acc"><summary>Servo angle scale</summary><div class="body">
+      <p class="muted">Degrees shown on the slider. Pulse limits are unchanged.</p>
+      <div class="fields"><label>Scale start °<input id="sMin" type="number" step="0.1"></label><label>Scale end °<input id="sMax" type="number" step="0.1"></label><label>Step °<input id="sStep" type="number" min="0.1" max="10" step="0.1"></label></div>
+      <button id="saveScale">Save scale</button><p class="readout" id="scaleReadout"></p>
+     </div></details>
+     <details class="acc"><summary>Twin calibration</summary><div class="body">
+      <p class="muted">Left-arm home is the neutral pose. Measure the real joint at both pulse endpoints to tune the visual travel.</p>
+      <label class="switch">Invert twin direction only<input id="reverseTwin" type="checkbox"></label>
+      <p class="muted">Changes the picture only. Servo pulses, hardware reversal and safety limits stay the same.</p>
+      <div class="fields two"><label>Joint ° at min pulse<input id="mMin" type="number" step="0.5"></label><label>Joint ° at max pulse<input id="mMax" type="number" step="0.5"></label></div>
+      <button id="saveMap">Save calibration</button>
+     </div></details>
+    </div>
+   </section>
+   <div id="calibrationSignsHost"></div>
+   <section class="panel-section">
+    <div style="display:flex;justify-content:space-between;align-items:center"><h3>Joints</h3><span class="muted" style="font-size:12px"><span class="chip pin">Dn</span> wired to Nano</span></div>
+    <div id="jointBrowser"></div>
+   </section>
+   <section class="panel-section">
+    <div style="display:flex;justify-content:space-between;align-items:center"><h3>Command activity</h3><span class="chip" id="actCount">0</span></div>
+    <ol class="activity" id="activity"></ol>
+    <p class="muted" id="actEmpty" style="font-size:12.5px">Acknowledged Nano commands appear here while connected.</p>
+    <div class="note"><svg class="icon"><use href="#i-info"/></svg><span>An acknowledgement confirms the Nano accepted a pulse; it is not a measured position. The twin shows the expected pose.</span></div>
+   </section>
+  </div>
+
+  <!-- INSPECT -->
+  <div data-panel="inspect" hidden>
+   <section class="panel-section">
+    <div class="eyebrow">Selected part</div><h2 id="pName">Click any part</h2><div class="muted" id="pSection">Parts are the original VinMoov meshes, in their assembled positions.</div>
+    <dl class="kv" id="pInfo" hidden><dt>Size (W × D × H)</dt><dd id="pSize"></dd><dt>Material</dt><dd id="pKinds"></dd><dt>Moves with</dt><dd id="pJoint"></dd><dt>Triangles</dt><dd id="pTris"></dd></dl>
+    <div class="btn-row" id="pActions" hidden><button id="pFocus">Focus</button><button id="pIsolate">Isolate</button><button id="pShowAll">Show all</button></div>
+   </section>
+   <section class="panel-section">
+    <h3>Key dimensions</h3><p class="muted" style="font-size:12.5px">Measured from the assembled model at rest pose (mm).</p>
+    <table class="dims" id="dimTable"></table>
+    <label class="switch">Show on model<input type="checkbox" id="dimToggle"></label>
+   </section>
+   <section class="panel-section">
+    <h3>Measure</h3><p class="muted" style="font-size:12.5px">Point-to-point distances on the surface of the twin.</p>
+    <div class="btn-row"><button id="mStart" class="primary">Start measuring</button><button id="mClear">Clear</button></div>
+    <ol class="activity" id="mList"></ol>
+   </section>
+   <section class="panel-section">
+    <h3>Explore</h3>
+    <div class="grid-btns"><button data-focus="head">Head</button><button data-focus="torso">Torso</button><button data-focus="arms">Arms</button><button data-focus="hands">Hands</button><button data-focus="legs">Legs</button><button data-focus="front">Whole</button></div>
+    <label class="switch">X-ray printed shells<input type="checkbox" id="xrayToggle"></label>
+    <label class="switch">100 mm floor grid<input type="checkbox" id="gridToggle"></label>
+   </section>
+  </div>
+
+  <!-- SPARES -->
+  <div data-panel="spares" hidden>
+   <section class="panel-section">
+    <div class="eyebrow">Spares &amp; assembly</div><h2>Parts library</h2>
+    <p class="muted" style="font-size:12.5px">Official i2 head, eyes, neck and hand files at their published size, the assembled body sections, and your wired servos.</p>
+    <input class="search" id="partSearch" type="search" placeholder="Search parts…" aria-label="Search parts">
+    <div class="filters" id="partFilters"></div>
+    <div id="partCard" class="part-card" hidden>
+     <div class="eyebrow" id="pcGroup"></div><h3 id="pcName" style="font-size:16px;margin-top:3px"></h3>
+     <dl class="kv"><dt id="pcSizeLabel">Print size (X × Y × Z)</dt><dd id="pcSize"></dd><dt>Source</dt><dd id="pcSource"></dd><dt id="pcTrisLabel">Triangles</dt><dd id="pcTris"></dd></dl>
+     <label class="switch">Turntable<input type="checkbox" id="pcSpin"></label>
+     <div class="btn-row"><a id="pcDownload" download>Download STL</a><a id="pcGuide" target="_blank" rel="noopener">Assembly guide ↗</a></div>
+     <div class="btn-row"><button id="pcBack" class="primary">Back to twin</button></div>
+    </div>
+    <ul class="parts" id="partList"></ul>
+    <div class="note warn" id="i2Note"><svg class="icon"><use href="#i-info"/></svg><span>No assembled i2 model has been published, so i2 parts are shown individually at true size rather than guessed onto the body.</span></div>
+   </section>
+   <section class="panel-section">
+    <h3>Wired servos · Nano Arms V8</h3>
+    <table class="bom" id="bom"></table>
+    <p class="muted" style="font-size:12px;margin-top:8px">Left arm D2–D5 · right arm D6–D9. External servo supply; share ground with the Nano. <span id="bomUnwired"></span></p>
+   </section>
+  </div>
+
+  <!-- MOTION -->
+  <div data-panel="motion" hidden>
+   <div id="motionSignsHost"></div>
+   <section class="panel-section live-signs" id="liveSigns">
+    <div class="eyebrow">Left arm · D2–D5</div><h2>Robot hand signs</h2>
+    <p class="muted">Tested arm sequences with your saved limits. Each gesture returns home.</p>
+    <p class="muted">Fast steps: up to 10 command units every 250 ms, with all four joints coordinated. The next step waits for Nano acknowledgement.</p>
+    <p id="gestureReady" class="readout" role="status"></p>
+    <button id="gestureSetup" class="primary">Set up hand signs</button>
+    <label class="home-confirm"><input id="gestureHomeConfirmed" type="checkbox"> Left arm is physically at its home position</label>
+    <p class="muted">Original home values: D2 149 · D3 135 · D4 152 · D5 149. Confirm only after checking the real arm.</p>
+    <div class="gestures" id="robotGestures">
+     <button data-robot-gesture="hi"><span>👋</span><b>Hi</b><small>Alt + 1</small></button>
+     <button data-robot-gesture="stop"><span>✋</span><b>Stop sign</b><small>Alt + 2</small></button>
+     <button data-robot-gesture="left"><span>←</span><b>Go left</b><small>Alt + 3</small></button>
+    </div>
+    <button class="primary sequence-key" data-robot-gesture="sequence">Hi → Stop → Go left <small>Alt + 4</small></button>
+    <label class="switch">Repeat until stopped<input id="gestureLoop" type="checkbox"></label>
+    <div class="btn-row"><button id="gestureStop" class="stop-loop">■ Stop loop <small>Esc</small></button><button id="gestureHome">Return home</button></div>
+    <p id="gestureStatus" class="readout" role="status">Switch to Robot mode and connect the Nano.</p>
+    <p class="muted sign-note">Arm motion only. Position the open hand and palm before testing; wrist and fingers are not driven.</p>
+    <button id="restoreSafety">Restore tested limits &amp; homes</button>
+   </section>
+   <section class="panel-section" id="previewGestures">
+    <div class="eyebrow">Twin preview only</div><h2>Animation previews</h2>
+    <p class="muted" style="font-size:12.5px">Full-body animations of the twin. Preview only — no servo commands are sent.</p>
+    <div class="gestures" id="gestures"></div>
+    <div class="btn-row"><button id="demo">▷ Idle motion</button><button id="restPose">Rest pose</button></div>
+    <p class="readout" id="motionStatus"></p>
+   </section>
+   <section class="panel-section">
+    <div class="eyebrow">Robot</div><h3>Record &amp; play</h3>
+    <p class="muted" style="font-size:12.5px" id="seqStatus">Connect the robot to record a sequence of arm moves.</p>
+    <div class="btn-row"><button id="record">● Record</button><button id="finish">Finish</button></div>
+    <div class="btn-row"><button id="play" class="primary">▷ Play</button><button id="hold">■ Stop</button></div>
+    <label class="switch">Loop playback<input type="checkbox" id="loop"></label>
+   </section>
+  </div>
+ </aside>
+</main>
+
+<footer><span id="status">Ready.</span><span>InMoov by Gael Langevin (CC BY-NC) · VinMoov assembly</span></footer>
+<div id="toast" role="status" hidden></div>
+
+<dialog id="connectDialog"><form method="dialog"><button class="x" aria-label="Close">×</button></form>
+ <div class="eyebrow">USB connection</div><h2>Connect your InMoov</h2>
+ <p class="muted">Choose the Arduino Nano running the Arms V8 firmware (D2–D9). The link reconnects automatically; enable each joint when ready.</p>
+ <label>USB port<select id="portSelect"></select></label>
+ <label>Connection mode<select id="serialMode"><option value="direct">Compatibility · direct pulses</option><option value="framed">Verified frames</option></select></label>
+ <div class="actions"><button id="refreshPorts">Refresh</button><button id="connectNow" class="primary">Connect Nano</button></div>
+</dialog>
+<dialog id="menuDialog"><form method="dialog"><button class="x" aria-label="Close">×</button></form>
+ <div class="eyebrow">Workspace</div><h2>Session</h2>
+ <p class="muted">Save joint limits, homes and recorded motion on the controller, or move them between computers.</p>
+ <div class="actions" style="justify-content:flex-start"><button id="save" class="primary">Save session</button><button id="export">Export JSON</button><button id="importBtn">Import JSON</button><input id="import" type="file" accept=".json" hidden></div>
+ <hr style="border:0;border-top:1px solid var(--line);margin:20px 0 6px">
+ <div class="eyebrow">About the twin</div>
+ <p style="font-size:13px">The body is Gael Langevin's original VinMoov assembly (the virtual InMoov used by MyRobotLab): every part sits where the designer placed it, at 1 : 1 scale, with the real joint pivots. Colours follow the source file — white printed shells, black servos and hardware, bronze bearings — with orange fingers to match your build.</p>
+ <p style="font-size:13px">Robot mode animates the twin from acknowledged pulses through your twin calibration. It is an expected pose, not encoder feedback or collision checking.</p>
+ <p style="font-size:13px"><a href="RESEARCH.md" target="_blank">Research &amp; sources ↗</a> · <a href="ASSEMBLY.md" target="_blank">Twin assembly notes ↗</a> · <a href="ROOM_SOURCES.md" target="_blank">Cabin sources ↗</a></p>
+</dialog>
+
+<script>
+document.getElementById('retryView').onclick=()=>location.reload();
+addEventListener('error',e=>{
+ const loading=document.getElementById('loading');
+ if(loading&&!loading.hidden){
+  loading.querySelector('strong').textContent='The view could not start';
+  document.getElementById('loadText').textContent=e.message||'A display module could not load.';
+  document.getElementById('retryView').hidden=false;
+ }
+},true);
+</script>
+<script type="module" src="app.js?v=render-recovery-20261009"></script>
+</body>
+</html>

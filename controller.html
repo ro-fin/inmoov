@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>16-Channel Servo Controller</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #111315; color: #f4f6f7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; }
+    header { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px 20px; background: #191c1f; border-bottom: 1px solid #343a40; }
+    h1 { margin: 0 auto 0 0; font-size: 20px; letter-spacing: 0; }
+    button { min-height: 38px; padding: 0 14px; border: 1px solid #596168; border-radius: 6px; background: #272c30; color: inherit; cursor: pointer; font-weight: 650; }
+    button:hover { background: #343a40; }
+    button.primary { background: #087f5b; border-color: #20c997; }
+    button.danger { color: #ff8787; border-color: #c92a2a; }
+    button:disabled, input:disabled { opacity: .45; cursor: not-allowed; }
+    #status { width: 100%; color: #adb5bd; font-size: 13px; }
+    main { width: min(1180px, 100%); margin: auto; padding: 18px; }
+    #channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 10px; }
+    .channel { padding: 14px; background: #1d2124; border: 1px solid #343a40; border-radius: 8px; }
+    .channel-head, .limits, .reading { display: flex; align-items: center; gap: 10px; }
+    .channel-head { margin-bottom: 12px; }
+    .channel-head strong { margin-right: auto; font-size: 16px; }
+    .channel-head button { min-width: 42px; padding: 0 10px; }
+    .limits { margin-bottom: 14px; }
+    label { color: #ced4da; font-size: 12px; }
+    input[type=number] { width: 82px; margin-left: 4px; padding: 7px; border: 1px solid #495057; border-radius: 4px; background: #101214; color: #f8f9fa; }
+    input[type=range] { width: 100%; accent-color: #20c997; }
+    .reading { justify-content: space-between; margin-top: 8px; color: #adb5bd; font-variant-numeric: tabular-nums; }
+    output { color: #63e6be; font-weight: 700; }
+    @media (max-width: 520px) { header { padding: 12px; } main { padding: 10px; } #channels { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>16-Channel Servo Controller</h1>
+    <button id="connect" class="primary">Connect Mega</button>
+    <button id="allCenter" disabled>Center all</button>
+    <button id="allOff" class="danger" disabled>All off</button>
+    <div id="status">Disconnected. Use Chrome or Edge and connect the Arduino Mega USB serial port.</div>
+  </header>
+  <main><section id="channels" aria-label="Servo channels"></section></main>
+  <script>
+    const HARD_MIN = 500;
+    const HARD_MAX = 2500;
+    const channels = document.querySelector('#channels');
+    const connectButton = document.querySelector('#connect');
+    const allCenterButton = document.querySelector('#allCenter');
+    const allOffButton = document.querySelector('#allOff');
+    const status = document.querySelector('#status');
+    let port;
+    let writer;
+    let queue = Promise.resolve();
+
+    function write(command) {
+      if (!writer) return;
+      queue = queue.then(() => writer.write(new TextEncoder().encode(command + '\n'))).catch(disconnect);
+    }
+
+    function clamp(value) { return Math.max(HARD_MIN, Math.min(HARD_MAX, Number(value))); }
+
+    function updateRange(card, send = true) {
+      const min = card.querySelector('.min');
+      const max = card.querySelector('.max');
+      const slider = card.querySelector('.slider');
+      min.value = clamp(min.value);
+      max.value = clamp(max.value);
+      if (Number(min.value) >= Number(max.value)) max.value = Math.min(HARD_MAX, Number(min.value) + 1);
+      if (Number(max.value) <= Number(min.value)) min.value = Math.max(HARD_MIN, Number(max.value) - 1);
+      slider.min = min.value;
+      slider.max = max.value;
+      slider.value = Math.max(Number(min.value), Math.min(Number(max.value), Number(slider.value)));
+      updateReading(card);
+      if (send) write(`SET,${card.dataset.channel},${slider.value}`);
+    }
+
+    function updateReading(card) {
+      const slider = card.querySelector('.slider');
+      const min = Number(slider.min);
+      const max = Number(slider.max);
+      const degrees = Math.round(((Number(slider.value) - min) / (max - min)) * 180);
+      card.querySelector('output').value = `${slider.value} us`;
+      card.querySelector('.degrees').textContent = `${degrees} deg`;
+    }
+
+    for (let channel = 0; channel < 16; channel++) {
+      const card = document.createElement('article');
+      card.className = 'channel';
+      card.dataset.channel = channel;
+      card.innerHTML = `
+        <div class="channel-head"><strong>Channel ${channel}</strong><button class="center" disabled title="Move to center">Center</button><button class="off danger" disabled title="Stop PWM output">Off</button></div>
+        <div class="limits"><label>Min <input class="min" type="number" min="500" max="2500" value="1000"></label><label>Max <input class="max" type="number" min="500" max="2500" value="2000"></label></div>
+        <input class="slider" type="range" min="1000" max="2000" value="1500" step="1" disabled aria-label="Channel ${channel} position">
+        <div class="reading"><output>1500 us</output><span class="degrees">90 deg</span></div>`;
+      const slider = card.querySelector('.slider');
+      slider.addEventListener('input', () => { updateReading(card); write(`SET,${channel},${slider.value}`); });
+      card.querySelector('.min').addEventListener('change', () => updateRange(card));
+      card.querySelector('.max').addEventListener('change', () => updateRange(card));
+      card.querySelector('.center').addEventListener('click', () => {
+        slider.value = Math.round((Number(slider.min) + Number(slider.max)) / 2);
+        updateReading(card); write(`SET,${channel},${slider.value}`);
+      });
+      card.querySelector('.off').addEventListener('click', () => write(`OFF,${channel}`));
+      channels.append(card);
+    }
+
+    function setConnected(connected) {
+      document.querySelectorAll('.slider,.center,.off').forEach(element => element.disabled = !connected);
+      allCenterButton.disabled = !connected;
+      allOffButton.disabled = !connected;
+      connectButton.textContent = connected ? 'Disconnect' : 'Connect Mega';
+    }
+
+    async function disconnect() {
+      try { if (writer) { writer.releaseLock(); writer = null; } if (port) await port.close(); } catch (_) {}
+      port = null;
+      setConnected(false);
+      status.textContent = 'Disconnected.';
+    }
+
+    connectButton.addEventListener('click', async () => {
+      if (port) return disconnect();
+      if (!('serial' in navigator)) {
+        status.textContent = 'Web Serial is unavailable. Open this page in current Chrome or Edge.';
+        return;
+      }
+      try {
+        port = await navigator.serial.requestPort();
+        await port.open({ baudRate: 115200 });
+        writer = port.writable.getWriter();
+        setConnected(true);
+        status.textContent = 'Connected at 115200 baud. Set safe min/max values before moving each servo.';
+        write('PING');
+      } catch (error) {
+        status.textContent = `Connection failed: ${error.message}`;
+        await disconnect();
+      }
+    });
+
+    allCenterButton.addEventListener('click', () => document.querySelectorAll('.center').forEach(button => button.click()));
+    allOffButton.addEventListener('click', () => write('ALL_OFF'));
+    navigator.serial?.addEventListener('disconnect', disconnect);
+  </script>
+</body>
+</html>

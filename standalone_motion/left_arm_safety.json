@@ -1,0 +1,57 @@
+{
+  "format": "InMoov-Standalone-Left-Arm-Safety",
+  "version": 1,
+  "units": "Old calibrator command values; physical joint angles are not measured",
+  "firmware_identity": "PONG,ROBOATTIS,NANO,ARMS,8,115200,D2-D9,V8",
+  "joints": [
+    {
+      "name": "Left omoplate", "pin": 2,
+      "raw_home": 149, "raw_up_limit": 120,
+      "home_us": 1600, "min_us": 1389, "max_us": 1604,
+      "note": "Preserved earlier standalone mapping; home display was rounded."
+    },
+    {
+      "name": "Left rotate", "pin": 3,
+      "raw_home": 135, "raw_outer_limit": 95, "raw_inner_limit": 160,
+      "home_us": 1500, "min_us": 1204, "max_us": 1685
+    },
+    {
+      "name": "Left shoulder", "pin": 4,
+      "raw_home": 152, "raw_forward_limit": 80, "raw_backward_limit": 183,
+      "home_us": 1626, "min_us": 1093, "max_us": 1856
+    },
+    {
+      "name": "Left bicep", "pin": 5,
+      "raw_home": 149, "raw_max_lift": 68,
+      "display_home": 0, "display_max_lift": 68,
+      "home_us": 1604, "max_lift_us": 1004,
+      "min_us": 1004, "max_us": 1604,
+      "lift_direction": "Decreasing old command value increases lift",
+      "home_command_acknowledged": true,
+      "physical_home_confirmed": false,
+      "include_in_hi_motion": true,
+      "note": "Replaces provisional 135-to-119 values. Hi targets are separately bounded within this operator-provided range."
+    }
+  ],
+  "hi_motion_pins": [2, 3, 4, 5],
+  "hi_gesture": {
+    "raw_pose_a": {"2": 135, "3": 125, "4": 115, "5": 120},
+    "raw_pose_b": {"2": 130, "3": 145, "4": 110, "5": 115},
+    "waves": 2,
+    "hold_seconds": 1,
+    "rest_seconds": 2
+  },
+  "stop_gesture": {
+    "raw_pose": {"2": 140, "3": 135, "4": 110, "5": 120},
+    "hold_seconds": 3,
+    "rest_seconds": 2,
+    "note": "Forward raised-arm Stop pose; open fingers and palm presentation require operator positioning because wrist/fingers are not connected."
+  },
+  "left_gesture": {
+    "raw_pose": {"2": 130, "3": 115, "4": 130, "5": 140},
+    "hold_seconds": 3,
+    "rest_seconds": 2,
+    "note": "This-way invitation toward robot's own left. Omoplate opens, rotation turns outward, elbow stays relatively extended. Wrist/fingers are not commanded."
+  },
+  "hi_note": "Raise with bent elbow, two synchronized A-B-A waves, greeting hold, home return. Targets are command values, not measured joint degrees."
+}

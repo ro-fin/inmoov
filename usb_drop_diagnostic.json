@@ -1,0 +1,322 @@
+[
+  {
+    "time": "15:07:41",
+    "label": "COM3",
+    "stage": "Connected",
+    "pin": null,
+    "us": null,
+    "id": 6001921000000
+  },
+  {
+    "time": "15:07:41",
+    "label": "All outputs off",
+    "stage": "Acknowledged",
+    "pin": null,
+    "us": null,
+    "id": 6001921000000
+  },
+  {
+    "time": "15:07:37",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5997468000000
+  },
+  {
+    "time": "15:07:34",
+    "label": "USB link interrupted: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5)). Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5994437000000
+  },
+  {
+    "time": "15:07:34",
+    "label": "Left omoplate · 1581 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1581,
+    "id": 5994343000000
+  },
+  {
+    "time": "15:07:34",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1581,
+    "id": 5994312000000
+  },
+  {
+    "time": "15:07:32",
+    "label": "Left omoplate · 1589 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1589,
+    "id": 5992781000000
+  },
+  {
+    "time": "15:07:32",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1589,
+    "id": 5992750000000
+  },
+  {
+    "time": "15:07:30",
+    "label": "Left omoplate · 1596 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1596,
+    "id": 5990578000000
+  },
+  {
+    "time": "15:07:30",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1596,
+    "id": 5990546000000
+  },
+  {
+    "time": "15:07:25",
+    "label": "Left omoplate · 1600 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1600,
+    "id": 5985828000000
+  },
+  {
+    "time": "15:07:25",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1600,
+    "id": 5985812000000
+  },
+  {
+    "time": "15:07:21",
+    "label": "COM3",
+    "stage": "Connected",
+    "pin": null,
+    "us": null,
+    "id": 5981078000000
+  },
+  {
+    "time": "15:07:21",
+    "label": "All outputs off",
+    "stage": "Acknowledged",
+    "pin": null,
+    "us": null,
+    "id": 5981078000000
+  },
+  {
+    "time": "15:07:16",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5976609000000
+  },
+  {
+    "time": "15:07:13",
+    "label": "USB link interrupted: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5)). Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5973593000000
+  },
+  {
+    "time": "15:07:13",
+    "label": "Left omoplate · 1600 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1600,
+    "id": 5973453000000
+  },
+  {
+    "time": "15:07:13",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1600,
+    "id": 5973421000000
+  },
+  {
+    "time": "15:07:09",
+    "label": "COM3",
+    "stage": "Connected",
+    "pin": null,
+    "us": null,
+    "id": 5969703000000
+  },
+  {
+    "time": "15:07:09",
+    "label": "All outputs off",
+    "stage": "Acknowledged",
+    "pin": null,
+    "us": null,
+    "id": 5969703000000
+  },
+  {
+    "time": "15:07:05",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5965234000000
+  },
+  {
+    "time": "15:07:02",
+    "label": "USB link interrupted: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5)). Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5962218000000
+  },
+  {
+    "time": "15:07:02",
+    "label": "Left omoplate · 1581 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1581,
+    "id": 5962125000000
+  },
+  {
+    "time": "15:07:02",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1581,
+    "id": 5962093000000
+  },
+  {
+    "time": "15:07:01",
+    "label": "Left omoplate · 1589 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1589,
+    "id": 5961906000000
+  },
+  {
+    "time": "15:07:01",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1589,
+    "id": 5961890000000
+  },
+  {
+    "time": "15:07:01",
+    "label": "Left omoplate · 1596 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1596,
+    "id": 5961671000000
+  },
+  {
+    "time": "15:07:01",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1596,
+    "id": 5961656000000
+  },
+  {
+    "time": "15:06:52",
+    "label": "Left omoplate · 1600 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1600,
+    "id": 5952640000000
+  },
+  {
+    "time": "15:06:52",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1600,
+    "id": 5952640000000
+  },
+  {
+    "time": "15:06:49",
+    "label": "COM3",
+    "stage": "Connected",
+    "pin": null,
+    "us": null,
+    "id": 5949703000000
+  },
+  {
+    "time": "15:06:49",
+    "label": "All outputs off",
+    "stage": "Acknowledged",
+    "pin": null,
+    "us": null,
+    "id": 5949703000000
+  },
+  {
+    "time": "15:06:45",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5945250000000
+  },
+  {
+    "time": "15:06:43",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5943234000000
+  },
+  {
+    "time": "15:06:42",
+    "label": "USB link interrupted: Nano USB device not present.. Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5942218000000
+  },
+  {
+    "time": "15:06:41",
+    "label": "USB link interrupted: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5)). Reconnecting; outputs off.",
+    "stage": "Connection",
+    "pin": null,
+    "us": null,
+    "id": 5941703000000
+  },
+  {
+    "time": "15:06:41",
+    "label": "Left omoplate · 1600 µs",
+    "stage": "Acknowledged",
+    "pin": 2,
+    "us": 1600,
+    "id": 5941546000000
+  },
+  {
+    "time": "15:06:41",
+    "label": "Left omoplate · SET",
+    "stage": "Queued",
+    "pin": 2,
+    "us": 1600,
+    "id": 5941515000000
+  },
+  {
+    "time": "15:04:31",
+    "label": "COM3",
+    "stage": "Connected",
+    "pin": null,
+    "us": null,
+    "id": 5812000000000
+  },
+  {
+    "time": "15:04:31",
+    "label": "All outputs off",
+    "stage": "Acknowledged",
+    "pin": null,
+    "us": null,
+    "id": 5811984000000
+  }
+]

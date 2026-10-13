@@ -1,0 +1,12 @@
+{
+  "port": "COM3",
+  "identity": "PONG,ROBOATTIS,NANO,ARMS,8,115200,D2-D9,V8",
+  "framedReplies": 1255,
+  "stressSeconds": 15.0,
+  "outputs": "all off",
+  "checksumRejection": "passed",
+  "duplicateAndStaleSequences": "passed",
+  "normalAndReversedAngles": "passed",
+  "medianRoundTripMs": 8.14,
+  "maxRoundTripMs": 22.48
+}

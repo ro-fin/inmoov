@@ -1,0 +1,17 @@
+# Regenerable: `npm ci` in digital_twin, `arduino-cli compile` for firmware
+digital_twin/node_modules/
+build-*/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Per-run runtime state (contains a fresh auth token every launch)
+studio_runtime.json
+studio-output.log
+studio-error.log
+*.log
+
+# Playwright / dev output
+digital_twin/test-results/
+digital_twin/playwright-report/

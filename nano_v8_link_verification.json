@@ -1,0 +1,8 @@
+{
+  "connected": true,
+  "disableCommandsAcknowledged": 160,
+  "retries": 0,
+  "reconnects": 0,
+  "badFrames": 1,
+  "outputs": "all off"
+}
